@@ -8,8 +8,7 @@ class LLM:
         # 调用 Ollama API 生成回复
         response = ollama.generate(
             model=self.model_name,
-            prompt=prompt,
-            max_tokens=100
+            prompt=prompt
         )
         return response["response"]
 
