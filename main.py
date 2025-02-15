@@ -1,5 +1,5 @@
 from asr import ASR
-from llm import LLM
+from llmds import LLM
 from tts import ChineseTTS
 
 
