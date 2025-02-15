@@ -4,7 +4,7 @@ import pyaudio
 from vosk import Model, KaldiRecognizer
 
 class ASR:
-    def __init__(self, model_path="vosk-model-cn-kaldi-multicn-0.15"):
+    def __init__(self, model_path="../vosk-model-cn-kaldi-multicn-0.15"):
         # 加载 Vosk 模型
         if not os.path.exists(model_path):
             raise FileNotFoundError(f"模型未找到: {model_path}")

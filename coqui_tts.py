@@ -41,3 +41,10 @@ class ChineseTTS:
         stream.stop_stream()
         stream.close()
         p.terminate()
+
+# 测试语音合成功能
+if __name__ == "__main__":
+    chinese_tts = ChineseTTS()
+    text = "你好，请问有什么可以帮你的吗？"
+    chinese_tts.synthesize_speech(text)
+    chinese_tts.play_audio("output_wav/output.wav")
