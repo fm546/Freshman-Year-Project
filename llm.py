@@ -1,7 +1,7 @@
 import ollama
 
 class LLM:
-    def __init__(self, model_name="deepseek-r1:1.5b"):
+    def __init__(self, model_name="qwen:1.8b"):
         self.model_name = model_name
 
     def generate_response(self, prompt):
